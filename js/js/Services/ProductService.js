@@ -1,0 +1,11 @@
+class ProductService {
+    constructor() {
+        this._products = new ProductsModel();
+        this._productsView = new ProductsView('#productsView');
+    }
+    listarProdutos() {
+        for (let i = 1; i < 10; i++)
+            this._products.add(new ProductModel(i, `Product ${i}`, `descricao ${i}`, 'img/product.jpg'));
+        this._productsView.update(this._products);
+    }
+}

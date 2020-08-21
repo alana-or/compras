@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "compras",
+  "main": "index.js",
+  "author": "Alana",
+  "license": "ISC",
+  "scripts": {
+    "test": "test",
+    "start": "tsc -w"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-cli": "^6.26.0",
+    "typescript": "^4.0.2"
+  }
+}

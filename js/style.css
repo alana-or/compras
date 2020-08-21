@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.scroll{
+    overflow: scroll;
+}
+div ::-webkit-scrollbar {
+    display: none;
+    
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+
+.header{
+    width: 100%;
+    background:#fff;
+    padding:20px 0;
+    box-shadow: 0px 1px 6px #6f6f6f;
+}
+
+.search{
+    width: 100%;
+}
+
+input{
+    font-size: 16px;
+}
+
+.w-200{
+    width: 200px;
+}
+
+.category{
+    
+}
+
+.category a{
+    margin: 20px 10px 0px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.category > :nth-child(1){
+    margin-left: 0;
+}
+
+.product{
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid rgba(86, 61, 124, .2);
+}
+
+img{
+    width: 20;
+}
