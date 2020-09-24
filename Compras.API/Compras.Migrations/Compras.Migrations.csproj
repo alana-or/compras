@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BancosDeDados\Compras\scripts\" />
+    <Folder Include="Compras\scripts\" />
   </ItemGroup>
 
 </Project>

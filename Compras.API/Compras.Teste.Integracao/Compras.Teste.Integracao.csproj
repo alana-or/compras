@@ -34,8 +34,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Compras.API.Migrations\Compras.API.Migrations.csproj" />
         <ProjectReference Include="..\Compras.API\Compras.API.csproj" />
+        <ProjectReference Include="..\Compras.Migrations\Compras.Migrations.csproj" />
     </ItemGroup>
     
 </Project>

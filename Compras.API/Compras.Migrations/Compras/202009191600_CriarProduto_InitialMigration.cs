@@ -1,13 +1,13 @@
 ﻿using FluentMigrator;
 
-namespace Compras.Migrations.BancosDeDados.Compras
+namespace Compras.Migrations.Compras
 {
     [Migration(202009191600)]
-    public class CriarOSPerguntasQuestionario : Migration
+    public class CriarProduto : Migration
     {
-        private const string chavePrimaria = "Pk_Chave";
+        private const string chavePrimaria = "Pk_Produto";
         private const string schema = "dbo";
-        private const string nomeTabela = "table";
+        private const string nomeTabela = "Produto";
 
         public override void Up()
         {
@@ -15,11 +15,11 @@ namespace Compras.Migrations.BancosDeDados.Compras
                 .Table(nomeTabela)
                 .InSchema(schema)
                 .WithColumn("id").AsInt32().NotNullable().PrimaryKey(chavePrimaria).Identity()
-                .WithColumn("texto").AsString().NotNullable()
-                .WithColumn("ordem").AsInt32().NotNullable()
-                .WithColumn("tipoResposta").AsInt32().NotNullable()
+                .WithColumn("descricao").AsString().NotNullable()
+                .WithColumn("preco").AsInt32().NotNullable()
+                .WithColumn("nome").AsInt32().NotNullable()
                 .WithColumn("ativo").AsBoolean().NotNullable().WithDefaultValue(true)
-                .WithColumn("dataCriacao").AsDateTime().NotNullable().WithDefault(SystemMethods.CurrentDateTime);
+                .WithColumn("criadoEm").AsDateTime().NotNullable().WithDefault(SystemMethods.CurrentDateTime);
         }
 
         public override void Down()

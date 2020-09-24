@@ -1,4 +1,4 @@
-using Compras.API.Domain.Entities;
+using Compras.API.Domain;
 using Compras.API.Repository.Mapeamentos;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +16,9 @@ namespace Compras.API.Repository.DbContexts
         }
 
         public virtual DbSet<Produto> Produtos { get; set; }
+        public virtual DbSet<Pedido> Pedidos { get; set; }
+        public virtual DbSet<PedidoDetalhe> PedidoDetalhes { get; set; }
+        public virtual DbSet<Cliente> Clientes { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ProdutoMap());
